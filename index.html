@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- metas requeridas-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   
+    <!--Ajax para font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Javascript ajax e bibliotecas do jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
+
+    <!--Bibliotecas do jquery-->
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css " rel = "stylesheet">
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+    <!-- Adiciona o bootstrap atraves da chamada por link externo do Bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Portifólio César Augusto</title>
+
+    
+	<link rel="stylesheet" href="_css/portifolio.css">
+    <script src="_javascript/index.js"></script>
+
+  </head>
+  <body onload="dado_escolhido()">
+
+        <div class="fundo_modal center-block" id="modal" >
+        
+            <img src="_imagens/fotoModal.jpeg" class="img img-fluid"> <br>
+            <span class="nomeModal mt-1">Desenvolvedor Cesar Reis</span><br>
+            <span class="fechar btn btn-outline-light" onclick="fecharModal()">X</span>
+          
+        </div>
+    
+    <div class="tudo">
+        
+            <div class=" flex-column container-fluid justify-content-center align-items-cente menu">
+                <header >
+                    <nav class="navbar navbar-expand-md navbar-transparente  ">
+                        <div class="container">    
+                            <span  class="navbar-brand ml-4"><img src="_imagens/LogoDevCesar.png" class="img-fluid logo"  alt=""></span>
+            
+                            <button class="navbar-toggler navbar-light" data-toggle="collapse" data-target="#abrir">
+                                <span class="navbar-toggler-icon "></span>
+                            </button>
+            
+                            <div class="collapse navbar-collapse navbar-light ml-5 pl-5" id="abrir">
+                                <ul class="navbar-nav m-auto">
+                                    <li class="nav-item">
+                                        <a  href="index.html" class="nav-link d-sm-block" id="localizacao"><b><SPAN ></SPAN>HOME</SPAN> </b> </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="servicos.html" class="nav-link d-sm-block"><b>SERVIÇOS</b></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="sobre.html" class="nav-link  d-sm-block"><b>QUEM SOMOS?</b></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <span href="" class="nav-link d-none d-lg-inline-block">|</span>
+                                    </li>
+                                    <li class="nav-item flex-sm-wrap">
+                                        <a href="contatos.html" class="nav-link d-sm-block"  ><b>CONTATOS</b></a>
+                                    </li>
+                                
+                                    <li class="nav-item text-center" >
+
+                                        <div class="row " >
+
+                                            <div class="col-3">
+                                                <a href="" class="nav-link mr-sm-3 m-md-0" ><b><i class="fa fa-instagram" aria-hidden="true"></i></b></a>
+                                            </div>
+
+                                            <div class="col-3">
+                                                <a href="" class="nav-link "><b><i class="fa fa-facebook-official" aria-hidden="true"></i></b></a>
+                                            
+                                            </div>
+
+                                            <div class="col-3">
+                                                
+                                                <a href="" class="nav-link " ><b><i class="fa fa-whatsapp" aria-hidden="true"></i></b></a>
+                                            
+                                            </div>
+                                                
+                                               
+                                        </div>
+                                            
+                                    </li>
+
+                                    
+                                </ul>
+                            </div>
+                        </div>   
+                    </nav>
+                </header>
+            </div>
+
+            <div class="container centro" >
+                <div class="row ">
+                    <div class="col-md-12  col-sm-12 text-start" >
+                        <div class="jumbotron pl-4">
+                            <div class="container">
+                                <span class="display-2 titulo "><b><span class="enfeite1"><</span>Cesar Reis <span class="enfeite2">/></span><br> FullStack Developer</b> </span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container text-center margin-Setinha" >
+                
+                    <i class="fa fa-angle-double-down icone "></i>
+                </div>
+            </div>
+
+            <div class="linear"></div>
+
+            <div class="conteudo margemConteudo">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 pt-5">
+                            <img src="_imagens/fotoDesenvolvedor.png" alt="" class="img-fluid d-none d-md-inline-block abrir_modal img_modal imagem" onclick="abrirModal()">
+                        </div>
+
+                        
+
+                        <div class="col-md-8 col-sm-12 mt-3 ">
+
+                            <h1 class="sobreTitulo"><b> QUEM SOU EU?</b></h1>
+                                <p class="sobre justify-content-center">   Cesar Augusto Reis de Meneses, Criador da devCesar, é apaixonado por 
+                                    tecnologia desde sua adolescencia,  sempre querendo saber o que havia por tras 
+                                    dos software e hardwere de cada maquina.
+                                    Teve contato com a programação ainda muito cedo, com 15 anos, e desde então,
+                                    não fica um dia sequer sem seu computador.
+                                    Gosta muito de desenvolver software de ponta a ponta, e deixar o cliente o 
+                                    mais satisfeito possivel.
+                                    O contato com o curso de Desenvolvimento de sistemas pra internet, ministrado
+                                    pela instituição Senai, foi a porta de entrada para o grande sonho, e hoje o 
+                                    sonho deste programador é realizar o seu sonho de ter uma página totalmente do 0, 
+                                    da maneira como bem entender.... </p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="row justify-content-center text-center mb-5">
+                        <div class="container pb-5">
+                                <button href="" class="btn btn-outline-danger btn-lg botaoVermais"><b>VER MAIS</b> </button>
+                        </div>
+                    </div>
+                    
+                    <div class="container container-fluid mt-5 text-center">
+                        <hr>
+                        <h1 class=" realizacoes  mt-4 mb-3"><B>REALIZAÇÕES</B></h1>
+                        
+                        
+                        <div id="carouselExampleControls" class="carousel slide d-none d-md-block" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                
+                                    <div class="cards-wrapper">
+                                        <div class="card">
+                                        <img src="_imagens/siteViagem.PNG" class="card-img-top img-fluid" alt="Site Viagens Cr">
+                                        <div class="card-body">
+                                            <h4 class="card-title"><b>C.R Viagens</b></h4>
+                                            <p class="card-text">Site de turismos e viagens. Desenvolvido com o intuito de garantir maior usabilidade e permanencia do cliente</p>
+                                            <a href="#" class="btn botaoVermais">Conheça Mais</a>
+                                        </div>
+                                        </div>
+                                        <div class="card  ">
+                                        <img src="_imagens/siteDoaçãoSangue.PNG" class="card-img-top img-fluid" alt="Site de doação de sangue">
+                                        <div class="card-body">
+                                            <h4 class="card-title"><b>Hospital do Sangue</b></h4>
+                                            <p class="card-text"><b>Site de inscrição para doação de sangue, onde o intuito é concientizar o usuario e fazer com que doe.</b></p>
+                                            <a href="#" class="btn botaoVermais">Conheça Mais</a>
+                                        </div>
+                                        </div>
+                                        <div class="card  ">
+                                        <img src="_imagens/siteMuseuNacional.PNG" class="card-img-top img-fluid" alt="Site Musel Nacional">
+                                        <div class="card-body">
+                                            <h4 class="card-title"><b> Musel Nascional</b></h4>
+                                            <p class="card-text"><b>Site para compreendimento das funcionalidades do musel, incrição, localidade e programação.</b></p>
+                                            <a href="#" class="btn botaoVermais">Conheça Mais</a>
+                                        </div>
+                                        </div>
+                                </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="cards-wrapper">
+                                    <div class="card">
+                                        <img src="_imagens/siteFinanças.PNG" class="card-img-top img-fluid" alt="Site Finanças">
+                                        <div class="card-body">
+                                        <h4 class="card-title"><b>Finanças Finans</b></h4>
+                                        <p class="card-text"><b>Site de finanças e de emprestimo, com intuito da permanencia e curiosidade do cliente.</b></p>
+                                        <a href="#" class="btn botaoVermais">Conheça Mais</a>
+                                        </div>
+                                    </div>
+                                    <div class="card  ">
+                                        <img src="_imagens/siteSpotify.PNG" class="card-img-top img-fluid" alt="Site Spotify">
+                                        <div class="card-body">
+                                        <h4 class="card-title"><b>Cópia Spotify</b></h4>
+                                        <p class="card-text"><b>Site copia do Spotify com o intuito de aprimorar conhecimentos e tecnicas de programação.</b></p>
+                                        <a href="#" class="btn botaoVermais">Conheça Mais</a>
+                                        </div>
+                                    </div>
+                                    <div class="card ">
+                                        <img src="_imagens/siteGameMataMosquito.PNG" class="card-img-top img-fluid" alt="Site game mata mosquito">
+                                        <div class="card-body">
+                                        <h4 class="card-title"><b>Game Mata Mosquito</b></h4>
+                                        <p class="card-text"><b>Game mata mosquito feito totalmente de Html, Css e Javascript com o intuito de estudos.</b></p>
+                                        <a href="#" class="btn botaoVermais">Conheça Mais</a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="cards-wrapper">
+                                    <div class="card">
+                                        <img src="_imagens/SiteOrçamentoPessoal.PNG" class="card-img-top img-fluid" alt="Site de orçamento Pessoal">
+                                        <div class="card-body">
+                                        <h4 class="card-title"><b>Orçamento Pessoal</b></h4>
+                                        <p class="card-text"><b>Site de orçamento pessoal, onde os dados são salvos atraves do localStorage e ultilizados em posteriores consultas.</b></p>
+                                        <a href="#" class="btn botaoVermais">Conheça Mais</a>
+                                        </div>
+                                    </div>
+                                    <div class="card ">
+                                        <img src="_imagens/SiteHelpDesk.PNG" class="card-img-top img-fluid" alt="Site help Desk">
+                                        <div class="card-body">
+                                        <h4 class="card-title"><b>Site Help Desk</b></h4>
+                                        <p class="card-text"><b>Site de duvidas Help Desk, utilizando Html, Css, Javascript e PHP na parte de Back-End.</b> </p>
+                                        <a href="#" class="btn botaoVermais">Conheça Mais</a>
+                                        </div>
+                                    </div>
+                                    <div class="card ">
+                                        <img src="_imagens/siteEnviaEmail.PNG" class="card-img-top img-fluid" alt="Site envia email">
+                                        <div class="card-body">
+                                        <h4 class="card-title"><b>Send Mail</b></h4>
+                                        <p class="card-text"><b>Site que direciona emails a endereços pré-definidos, utilizando Html, Css, Javascript e PHP.</b></p>
+                                        <a href="#" class="btn botaoVermais">Conheça Mais</a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                        <div class="container d-md-none d-sm-block">
+                            <div class="row justify-content-center">
+                                <div class="col-md-11">
+
+                                    <div id="carouselExampleControls2" class="carousel slide d-md-none d-sm-block" data-ride="carousel">
+                                        
+                                        <div class="carousel-inner" >
+                                            <div class="carousel-item active">
+                                                    <div class="card">
+                                                        <img src="_imagens/siteFinanças.PNG" class="card-img-top img-fluid" alt="Site Finanças">
+                                                        <div class="card-body">
+                                                        <h4 class="card-title"><b>Finanças Finans</b></h4>
+                                                        <p class="card-text"><b>Site de finanças e de emprestimo, com intuito da permanencia e curiosidade do cliente.</b></p>
+                                                        <a href="#" class="btn botaoVermais">Conheça Mais</a>
+                                                        </div>
+                                                    </div>
+                                                
+                                            </div>
+
+                                            <div class="carousel-item">
+                                                <div class="card  ">
+                                                    <img src="_imagens/siteSpotify.PNG" class="card-img-top img-fluid" alt="Site Spotify">
+                                                    <div class="card-body">
+                                                    <h4 class="card-title"><b>Cópia Spotify</b></h4>
+                                                    <p class="card-text"><b>Site copia do Spotify com o intuito de aprimorar conhecimentos e tecnicas de programação.</b></p>
+                                                    <a href="#" class="btn botaoVermais">Conheça Mais</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="carousel-item">
+                                                <div class="card">
+                                                    <img src="_imagens/siteViagem.PNG" class="card-img-top img-fluid" alt="Site Viagens Cr">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title"><b>C.R Viagens</b></h4>
+                                                        <p class="card-text"><b>Site de turismos e viagens. Desenvolvido com o intuito de garantir maior usabilidade e permanencia do cliente</b></p>
+                                                        <a href="#" class="btn botaoVermais">Conheça Mais</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="carousel-item">
+                                                <div class="card  ">
+                                                    <img src="_imagens/siteMuseuNacional.PNG" class="card-img-top img-fluid" alt="Site Musel Nacional">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title"><b> Musel Nascional</b></h4>
+                                                        <p class="card-text"><b>Site para compreendimento das funcionalidades do musel, incrição, localidade e programação.</b></p>
+                                                        <a href="#" class="btn botaoVermais">Conheça Mais</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="carousel-item">
+                                                <div class="card  ">
+                                                    <img src="_imagens/siteDoaçãoSangue.PNG" class="card-img-top img-fluid" alt="Site de doação de sangue">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title"><b>Hospital do Sangue</b></h4>
+                                                        <p class="card-text"><b>Site de inscrição para doação de sangue, onde o intuito é concientizar o usuario e fazer com que doe.</b></p>
+                                                        <a href="#" class="btn botaoVermais">Conheça Mais</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="carousel-item">
+                                                <div class="card ">
+                                                    <img src="_imagens/siteGameMataMosquito.PNG" class="card-img-top img-fluid" alt="Site game mata mosquito">
+                                                    <div class="card-body">
+                                                    <h4 class="card-title"><b>Game Mata Mosquito</b></h4>
+                                                    <p class="card-text"><b>Game mata mosquito feito totalmente de Html, Css e Javascript com o intuito de estudos.</b></p>
+                                                    <a href="#" class="btn botaoVermais">Conheça Mais</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="carousel-item">
+                                                <div class="card">
+                                                    <img src="_imagens/SiteOrçamentoPessoal.PNG" class="card-img-top img-fluid" alt="Site de orçamento Pessoal">
+                                                    <div class="card-body">
+                                                    <h4 class="card-title"><b>Orçamento Pessoal</b></h4>
+                                                    <p class="card-text">Site de orçamento pessoal, onde os dados são salvos atraves do localStorage e ultilizados em posteriores consultas.</p>
+                                                    <a href="#" class="btn botaoVermais">Conheça Mais</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="carousel-item">
+                                                <div class="card ">
+                                                    <img src="_imagens/SiteHelpDesk.PNG" class="card-img-top img-fluid" alt="Site help Desk">
+                                                    <div class="card-body">
+                                                    <h4 class="card-title"><b>Site Help Desk</b></h4>
+                                                    <p class="card-text">Site de duvidas Help Desk, utilizando Html, Css, Javascript e PHP na parte de Back-End. </p>
+                                                    <a href="#" class="btn botaoVermais">Conheça Mais</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="carousel-item">
+                                                <div class="card ">
+                                                    <img src="_imagens/siteEnviaEmail.PNG" class="card-img-top img-fluid" alt="Site envia email">
+                                                    <div class="card-body">
+                                                    <h4 class="card-title"><b>Send Mail</b></h4>
+                                                    <p class="card-text">Site que direciona emails a endereços colocas ou pré-definidos, utilizando Html, Css, Javascript e PHP na parte de Back-End</p>
+                                                    <a href="#" class="btn botaoVermais">Conheça Mais</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="container">
+
+                    <div class="container mt-5 text-center">
+                        
+                        <h1 class=" realizacoes  mt-5 mb-5 "><B>CONHECIMENTOS</B></h1>
+                        
+                    </div>
+
+                        <div class="row text-center  justify-content-between">
+
+                            <div class="col-md-3 col-sm-12 ">
+                                <img src="_imagens/html_css_javascript.png" alt="icone html" class="icones img-fluid mb-2 ">
+                                <p class="legenda  p-2">Conhecimento avançado com a triade do frontend, html, css, e javascript. </p>
+                          
+                            </div>
+
+                            <div class="col-md-3 col-sm-12 ">
+                                <img src="_imagens/bootstrap.jpeg" alt="icone bootstrap" class=" img-fluid  icones mb-2">
+                            <p class="legenda mb-sm-5 p-2"> Sites responsivos com conhecimento avançado a utilização do framework Bootstrtap. </p>
+                            
+                            </div>
+
+                            <div class="col-md-3 col-sm-12 ">
+                                <img src="_imagens/java_Mysql.png" alt="icone JavaMysql" class="icones img-fluid mb-2">
+                                <p class="legenda mb-sm-5 p-2">  Desenvolvimento backend com linguagem java, e banco de dados Mysql.</p>
+                            </div>
+
+                            <div class="col-md-3 col-sm-12 ">
+                                <img src="_imagens/arduino.png" alt="icone arduino e c++" class="icones img-fluid mb-2">
+                                <p class="legenda mb-sm-5 p-2">  Conhecimento em linguagem C++ voltado ao arduino.</p>
+                               
+                            </div>
+
+                        </div>
+
+                    <hr >
+
+                    <div class="text-center container container-fluid ">
+                        <h1 class="realizacoes  mt-5 mb-5 mb-0"><b>FORMAÇÕES</b></h1>
+
+                        <div class="container">
+                            <div class="row  justify-content-between">
+
+                                <div class="col-md-4">
+                                    <img src="_imagens/senai_facebook.png" alt="" class="icones2 img-fluid mb-2">
+                                    <p class="legenda mb-sm-5 p-2">Formação técnica em desenvolvimento de sistemas para a internet.</p>
+                                   
+                                </div>
+
+                                <div class="col-md-4">
+                                    <img src="_imagens/udemy.png" alt="" class="icones2 img-fluid mb-2">
+                                    <p class="legenda mb-sm-5 p-2">Desenvolvimento completo frontend e backend com html, css, javascript, ecmascript, mysql, php, e ionic !!!</p>
+                                    
+
+                                </div>
+
+                                <div class="col-md-4">
+                                    <img src="_imagens/senai_facebook.png" alt="" class="icones2 img-fluid mb-2">
+                                    <p class="legenda mb-sm-5 p-2">Automação residencial e industrial, com uso do arduino.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <footer class="pb-5"> 
+                    <div class="container">
+                        <div class="row justify-content-around">
+                            <div class="col-12 text-center mb-5">
+                                <h1 class=" realizacoes text-white  mt-5"><B>CONTATOS</B></h1>
+                            </div>
+
+                            <div class="col-md-4 col-sm-11 text-center">
+                                <H3 class="contatos"><b><i class="fa fa-whatsapp" aria-hidden="true"></i> : (11) 98219-2778</b></H3><br>
+                            
+                                <H3 class="contatos"><b> Tel.: (11) 4354-0104</H3></b><br>
+                            
+                                <h3 class="contatos"><i class="fa fa-instagram" aria-hidden="true"></i><b>DevCesar_OFC</b></h3><br>
+                            </div>
+
+                            
+                            <div class="col-md-4 col-sm-11 text-center">
+                            <hr class="d-md-none d-sm-block">    
+                            
+                                <h3 class="contatos">Dúvidas Frequentes</3>
+                                <br>
+                                
+                                <input type="text" name="" id="" placeholder="Dúvida:" class="formulario mb-3">
+                            
+                                
+                                <input type="email" name="" id="" placeholder="E-mail de retorno:" class="formulario"><br>
+                            
+
+                                <button type="submit" class="btn botaoVermais btn-inline-block">Enviar Duvida</button>
+                                <hr class="d-md-none d-sm-block">
+                            </div>
+
+                            <div class="col-md-4 col-sm-12 text-center ">
+
+                                <span><h3 class="contatos ">Agende Seu Orçamento!</h3></span>
+                                <button type="button" class="btn botaoVermais " data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Enviar Email</button>
+                                
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Enviar Mensagem</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                <div class="form-group">
+                                                    <label for="recipient-name" class="col-form-label">DevCesar@gmail.com</label>
+                                                    <input type="text" class="form-control" id="recipient-name" placeholder="Assunto da mensagem..">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="message-text" class="col-form-label">Mensagem</label>
+                                                    <textarea class="form-control" id="message-text" placeholder="Conteudo da mensagem.."></textarea>
+                                                </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer ">
+                                                <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Fechar</button>
+                                                <button type="button" class="btn botaoVermais">Enviar Mensagem</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </footer>
+
+                <div class="container copyrighth">
+                    <div class="row justify-content-center">
+                        <div class="col-12 text-center">
+                            <i class="fa fa-copyright" aria-hidden="true"></i> Todos os direitos reservados
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            
+
+    </div>
+
+
+    <!--Tag para abertura do modal-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+                        
+   </body>
+</html>

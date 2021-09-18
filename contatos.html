@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- metas requeridas-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+     <!--Ajax para font awesome-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <!--Javascript ajax e bibliotecas do jquery-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+     <script src ="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
+ 
+     <!--Bibliotecas do jquery-->
+     <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css " rel = "stylesheet">
+     <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+ 
+     <!-- Adiciona o bootstrap atraves da chamada por link externo do Bootstrap  -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+ 
+    <title>Portifólio César Augusto</title>
+
+
+    
+	<link rel="stylesheet" href="_css/portifolio.css">
+    <script src="_javascript/index.js"></script>
+    
+    
+
+  </head>
+  <body onload="dado_escolhido()">
+
+    
+    <div class="tudo">
+        
+            <div class=" flex-column container-fluid justify-content-center align-items-cente menu">
+                <header >
+                    <nav class="navbar navbar-expand-md navbar-transparente  ">
+                        <div class="container">    
+                            <span  class="navbar-brand ml-4"><img src="_imagens/LogoDevCesar.png" class="img-fluid logo"  alt=""></span>
+            
+                            <button class="navbar-toggler navbar-light" data-toggle="collapse" data-target="#abrir">
+                                <span class="navbar-toggler-icon "></span>
+                            </button>
+            
+                            <div class="collapse navbar-collapse navbar-light ml-5 pl-5" id="abrir">
+                                <ul class="navbar-nav m-auto">
+                                    <li class="nav-item">
+                                        <a  href="index.html" class="nav-link d-sm-block"><b><SPAN ></SPAN>HOME</SPAN> </b> </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="servicos.html" class="nav-link d-sm-block"><b>SERVIÇOS</b></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="sobre.html" class="nav-link  d-sm-block"><b>QUEM SOMOS?</b></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <span href="" class="nav-link d-none d-lg-inline-block">|</span>
+                                    </li>
+                                    <li class="nav-item flex-sm-wrap">
+                                        <a href="contatos.html" class="nav-link d-sm-block" id="localizacao" ><b>CONTATOS</b></a>
+                                    </li>
+                                
+                                    <li class="nav-item text-center" >
+
+                                        <div class="row" >
+
+                                            <div class="col-3">
+                                                <a href="" class="nav-link  " ><b><i class="fa fa-instagram" aria-hidden="true"></i></b></a>
+                                            
+                                            </div>
+
+                                            <div class="col-3">
+                                                <a href="" class="nav-link "><b><i class="fa fa-facebook-official" aria-hidden="true"></i></b></a>
+                                            
+                                            </div>
+
+                                            <div class="col-3">
+                                                
+                                                <a href="" class="nav-link " ><b><i class="fa fa-whatsapp" aria-hidden="true"></i></b></a>
+                                            
+                                            </div>
+                                                
+                                               
+                                        </div>
+                                            
+                                    </li>
+
+                                    
+                                </ul>
+                            </div>
+                        </div>   
+                    </nav>
+                </header>
+            </div>
+
+            <div class="container centro" >
+                <div class="row ">
+                    <div class="col-md-12  col-sm-12 text-start" >
+                        <div class="jumbotron pl-4">
+                            <div class="container">
+                                <span class="display-2 titulo "><b><span class="enfeite1"><</span>Cesar Reis <span class="enfeite2">/></span><br> FullStack Developer</b> </span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container text-center margin-Setinha" >
+                
+                    <i class="fa fa-angle-double-down icone "></i>
+                </div>
+            </div>
+
+            <div class="linear2"></div>
+            
+                <footer class="mb-0"> 
+                    <div class="container ">
+                        <div class="row justify-content-around">
+                            <div class="col-12 text-center mb-2">
+                                <h1 class=" realizacoes text-white  mt-5"><B>CONTATOS</B></h1>
+                            </div>
+
+                            <div class="col-sm-12 col-md-6 mb-5">
+
+                                <div class="container fundo text-center">
+                                    <h4 class="text-center titulo3 mt-2"><b>CADASTRO</b> </h4>
+                            
+                                    <form action="" method="" class=" container container-fluid">
+                            
+                                        <input type="text" name="" id="nome" placeholder="Nome completo" class="bloco-todo formulario" required>
+                                        <br>
+                            
+                            
+                                        <div class="dados mt-3 container">
+                                            <div class="row justify-content-center">
+                                                <div class="col-md-4">
+                                                    <input type="radio" name="doc" id="cpf" value="cpf" onclick="dado_escolhido()" class="formulario" checked><label for="cpf" ><span>CPF</span></label>
+                                                </div>
+                            
+                                                <div class="col-md-4">
+                                                    <input type="radio" name="doc" id="cnpj" value="cnpj" onclick="dado_escolhido()" class="formulario"><label for="cnpj"><span>CNPJ</span></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                            
+                                        <input type="text" name="" id="cpf_cnpj" placeholder="Escolha CPF ou CNPJ" class=" mask-cpf bloco-todo formulario" required >
+                                        <br>
+                            
+                                
+                                        <input type="text" name="" id="fixo" placeholder="Tel. Fixo (opcional)" class="mask-telefone formulario" >
+                                    
+                                        <input type="text" name="" id="celular" placeholder="Celular" class="meio-todo mask-celular formulario" required>
+                            
+                                        <h4 class="text-center endereco"><b>ENDEREÇO</b> </h4>
+                            
+                                        <input type="text" name="" id="cep" placeholder="CEP (Obrigatorio.)" class="cep mask-cep formulario"  size="10" maxlength="9" onblur="pesquisacep(this.value);" required>
+                                        <input type="text" name="" id="rua" placeholder="Lagradouro (Rua, Avenida, etc...)" class="lagradouro formulario" disabled>
+                                        <br>
+                            
+                                        <input type="number" name="" id="numero" placeholder="Numero" class="numero formulario" required>
+                                        <input type="text" name="" id="complemento" placeholder="Complemento" class="complemento formulario" >
+                                        <br>
+                            
+                                        <input type="text" id="bairro" placeholder="Bairro" class="bloco-todo formulario" disabled class="formulario">
+                                        <br>
+                                        <input type="text" name="" id="cidade" placeholder="Cidade" class="cidade formulario" disabled >
+                                        <input type="text" name="" id="estado" placeholder="Estado" class="estado formulario" disabled>
+                                        <br>
+                            
+                            
+                                        <div id="resposta" class="text-danger"></div>
+                            
+                                        <br>
+                                        <div class="text-center">
+                                            <input type="button" value="Enviar" class="btn btn_form mt-5" class="btn" onclick="valida()">
+                                        </div>
+                            
+                                    
+                                    </form>
+                                </div>
+                            </div>
+
+                          
+
+                            <div class="col-md-6 col-sm-11 text-center mt-5">
+                                <H3 class="contatos mb-3"><b><i class="fa fa-whatsapp" aria-hidden="true"></i> : (11) 98219-2778</b></H3><br>
+                            
+                                <H3 class="contatos mb-4"><b> Tel.: (11) 4354-0104</H3></b><br>
+                            
+                                <h3 class="contatos mb-4"><i class="fa fa-instagram" aria-hidden="true"></i><b>DevCesar_OFC</b></h3><br>
+                            
+                            <hr class="d-md-none d-sm-block">    
+                            
+                                <h3 class="contatos mb-4">Dúvidas Frequentes</3>
+                                <br>
+                                
+                                <input type="text" name="" id="" placeholder="Dúvida:" class="formulario mb-3">
+                            
+                                
+                                <input type="email" name="" id="" placeholder="E-mail de retorno:" class="formulario "><br>
+                            
+
+                                <button type="submit" class="btn botaoVermais btn-inline-block mb-5">Enviar Duvida</button>
+                                <hr class="d-md-none d-sm-block">
+                            
+
+                                <span><h3 class="contatos ">Agende Seu Orçamento!</h3></span>
+                                <button type="button" class="btn botaoVermais " data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Enviar Email</button>
+                                
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Enviar Mensagem</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                <div class="form-group">
+                                                    <label for="recipient-name" class="col-form-label text-dark">DevCesar@gmail.com</label>
+                                                    <input type="text" class="form-control" id="recipient-name" placeholder="Assunto da mensagem..">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="message-text" class="col-form-label text-dark">Mensagem</label>
+                                                    <textarea class="form-control" id="message-text" placeholder="Conteudo da mensagem.."></textarea>
+                                                </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer ">
+                                                <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Fechar</button>
+                                                <button type="button" class="btn botaoVermais">Enviar Mensagem</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class=" copyrighth  ">
+                        <div class="row justify-content-center mt-0">
+                            <div class="col-12 text-center">
+                                <i class="fa fa-copyright" aria-hidden="true"></i> Todos os direitos reservados
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                
+            </div>
+
+    </div>
+
+    <!--Tag para abertura do modal-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+ </body>
+</html>
