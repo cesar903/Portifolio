@@ -20,7 +20,6 @@ $('#exampleModal').on('show.bs.modal', function (event) {
     
     $('.mask-telefone').mask('(99) 9999-9999'); //Telefone
     $('.mask-celular').mask('(99) 99999-9999'); //celular
-    $('.mask-cep').mask('99999-999'); //celular
 
     //Esta função faz com que o input name aceita apenas letras
     $(document).ready(function() {
