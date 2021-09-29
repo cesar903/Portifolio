@@ -7,6 +7,7 @@ function fecharModal(){
 }
 
 
+//Esta função ativa o odal ao receber o clique na foto com a funçaõ
 $('#exampleModal').on('show.bs.modal', function (event) {
     var button = $(event.relatedTarget) 
     var recipient = button.data('whatever') 
@@ -36,6 +37,8 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 
     });
 
+
+    //Esta função ativa o mask para cpf ou cnpj
     function dado_escolhido(){
         
         
@@ -48,7 +51,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 
     };
 
-    
+    //Apos enviar esta função limpa o formulario de contatos
     function limpa_formulário_cep() {
         //Limpa valores do formulário de cep.
         document.getElementById('rua').value=("");
@@ -114,11 +117,13 @@ function pesquisacep(valor) {
     }
 };
 
+//Esta função faz a validação do formulario na area de contatos
 function valida(){
     return nome() && valida_cpf() && valida_tel() && valida_cep() && valida_numero() && salva_Dados()
 }
 
 
+//Faz a validação do nome, deixando a linha vermelha e aparcendo uma mensagem de aviso caso receba false
 function nome(){
 
     if(document.getElementById('nome').value == ""){
@@ -135,6 +140,7 @@ function nome(){
     }
 }
 
+//Faz a validação do CPF, deixando a linha vermelha e aparcendo uma mensagem de aviso caso receba false
 function valida_cpf(){
 
     if(document.getElementById('cpf_cnpj').value == ""){
@@ -151,6 +157,8 @@ function valida_cpf(){
     }
 }
 
+
+//Faz a validação do Telefone, deixando a linha vermelha e aparcendo uma mensagem de aviso caso receba false
 function valida_tel(){
 
     if(document.getElementById('celular').value == ""){
@@ -168,6 +176,7 @@ function valida_tel(){
     }
 }
 
+//Faz a validação do CEP, deixando a linha vermelha e aparcendo uma mensagem de aviso caso receba false
 function valida_cep(){
 
     if(document.getElementById('cep').value == ""){
@@ -184,6 +193,7 @@ function valida_cep(){
     }
 }
 
+//Faz a validação do Numeroda residencia, deixando a linha vermelha e aparcendo uma mensagem de aviso caso receba false
 function valida_numero(){
 
     if(document.getElementById('numero').value == ""){
@@ -200,7 +210,7 @@ function valida_numero(){
     }
 }
 
-
+//Salva os dados em variaveis
 function salva_Dados(){
     let nome = document.getElementById('nome').value
     let cpf_cnpj = document.getElementById('cpf_cnpj').value
@@ -214,6 +224,8 @@ function salva_Dados(){
     let cidade = document.getElementById('cidade').value
     let estado = document.getElementById('estado').value
 
+
+    //Cria um objeto com as informações recebidas
     let Dados_Pessoais = {
 
         "Nome:":nome,
@@ -229,7 +241,7 @@ function salva_Dados(){
         "Estado:":estado,
         
     }
-
+    //Reseta o formulario apos enviado
     objJson(Dados_Pessoais)
     document.getElementById('nome').value = ""
     document.getElementById('cpf_cnpj').value = ""
@@ -246,6 +258,7 @@ function salva_Dados(){
     return true
 }
 
+//esta função recebe o objeto e guarda em um arquivo json para posteriormente swer usado para algo
 function objJson(Dados_Pessoais){
 
     var Dados = JSON.stringify(Dados_Pessoais)
@@ -253,7 +266,8 @@ function objJson(Dados_Pessoais){
     return this.Dados
 }
 
-function typeWrite(elemento){
+//Esta função mostra letra por letra ate o termino do titulo, ela é chamada ao carregar o titulo com o nome do desenvolvedos
+function letraPorLetra(elemento){
 
     const titulo = document.getElementById('titulo');
 

@@ -28,28 +28,40 @@
     <script src="_javascript/index.js"></script>
 
   </head>
-  <body onload="dado_escolhido()">
+  <body >
 
-        <div class="fundo_modal center-block" id="modal" >
-        
-            <img src="_imagens/fotoModal.jpeg" class="img img-fluid"> <br>
-            <span class="nomeModal mt-1">Desenvolvedor Cesar Reis</span><br>
-            <span class="fechar btn btn-outline-light" onclick="fecharModal()">X</span>
-          
-        </div>
+    <!--ESta div apresenta a foto do desenvovedor (Efeito modal)-->
+    <div class="fundo_modal center-block" id="modal" >
     
+        <img src="_imagens/fotoModal.jpeg" class="img img-fluid"> <br>
+        <span class="nomeModal mt-1">Desenvolvedor Cesar Reis</span><br>
+        <span class="fechar btn btn-outline-light" onclick="fecharModal()">X</span>
+        
+    </div>
+    
+    <!--Esta div abrange todo o conteudo da pagina-->
     <div class="tudo">
         
+            <!--Esta div engloba o conteudo do cabeçalho-->
             <div class=" flex-column container-fluid justify-content-center align-items-cente menu">
                 <header >
+
+                    <!--O nav cria um cabeçalho de navegação, expansivel-->
                     <nav class="navbar navbar-expand-md navbar-transparente">
+
+                        <!--Esta div engloba os menus (Links)-->
                         <div class="container">    
+
+                            <!--Esta sera a foto ao canto da navegação do cabeçalho-->
                             <span  class="navbar-brand ml-4"><img src="_imagens/LogoDevCesar.png" class="img-fluid logo"  alt=""></span>
-            
+        
+                            <!--Este comando indica que o botão ira aparecer quando houver um colapso de tela-->
                             <button class="navbar-toggler navbar-light" data-toggle="collapse" data-target="#abrir">
+                                <!--Icone do botão-->
                                 <span class="navbar-toggler-icon "></span>
                             </button>
             
+                            <!--Conteudo que sera disponibilizado no menu, quando a tela for sm ele se transforma em bloco, ficando um ao lado do outro-->
                             <div class="collapse navbar-collapse navbar-light ml-5 pl-5" id="abrir">
                                 <ul class="navbar-nav m-auto">
                                     <li class="nav-item">
@@ -82,7 +94,7 @@
                                             </div>
 
                                             <div class="col-3">
-                                                
+                                                <!--Usando a api do whatsapp, ao clicar no simbolo ele redicina para o contato do desenvolvedor-->
                                                 <a href="" class="nav-link " ><b><i class="fa fa-whatsapp" aria-hidden="true"></i></b></a>
                                             
                                             </div>
@@ -100,6 +112,7 @@
                 </header>
             </div>
 
+            <!--Titulo da pagina contendo nome do desenvolvedor de descrição-->
             <div class="container centro" >
                 <div class="row ">
                     <div class="col-md-12  col-sm-12 text-start" >
@@ -121,7 +134,7 @@
                                 <!--O script ativa a função somente a partir do titulo criado, 
                                 assim a função não ativa sem antes carregar o titulo-->
                                 <script>
-                                    typeWrite(titulo)
+                                    letraPorLetra(titulo)
                                 </script>
                                 
                             </div>
@@ -133,13 +146,18 @@
                 </div>
             </div>
 
+             <!--Esta div da o efeito de sombra ao rolar o scroll(Descer a pagina)-->
             <div class="linear"></div>
 
+            <!--Conteudo do centro do site, como informações e etc.-->
             <div class="conteudo margemConteudo">
 
                 <div class="container">
+                    
+                    <!--O row cria uma linha, e o col, vai dividindo em colunas, sendo 12 o maximo de colunas-->
                     <div class="row">
                         <div class="col-md-4 pt-5">
+                            <!--o comando inline-block diz que a foto somente ira aparecer em telas acima de medianas-->
                             <img src="_imagens/fotoDesenvolvedor.png" alt="" class="img-fluid d-none d-md-inline-block abrir_modal img_modal imagem" onclick="abrirModal()">
                         </div>
 
@@ -169,15 +187,22 @@
                         </div>
                     </div>
                     
+                    <!--O container fluide diz que sera um container que se adapita as dimenções das telas-->
                     <div class="container container-fluid mt-5 text-center">
                         <hr>
+
+                        <!--Realizações-->
                         <h1 class=" realizacoes  mt-4 mb-3"><B>REALIZAÇÕES</B></h1>
                         
                         
+                        <!--O Efeito carousel faz com que a foto se mova pra entrar outra foto-->
+                        <!--O comando d-md-block diz que somente irara aparecer o carousel em telas medianas
+                        , em telas menores outro carousel foi preparado para apresentar-->
                         <div id="carouselExampleControls" class="carousel slide d-none d-md-block" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                 
+                                    <!--Este comando cria cards na tela, dividido em tres partes-->
                                     <div class="cards-wrapper">
                                         <div class="card">
                                         <img src="_imagens/siteViagem.PNG" class="card-img-top img-fluid" alt="Site Viagens Cr">
@@ -187,7 +212,7 @@
                                             <a href="#" class="btn botaoVermais">Conheça Mais</a>
                                         </div>
                                         </div>
-                                        <div class="card  ">
+                                        <div class="card ">
                                         <img src="_imagens/siteDoaçãoSangue.PNG" class="card-img-top img-fluid" alt="Site de doação de sangue">
                                         <div class="card-body">
                                             <h4 class="card-title"><b>Hospital do Sangue</b></h4>
@@ -195,7 +220,7 @@
                                             <a href="#" class="btn botaoVermais">Conheça Mais</a>
                                         </div>
                                         </div>
-                                        <div class="card  ">
+                                        <div class="card ">
                                         <img src="_imagens/siteMuseuNacional.PNG" class="card-img-top img-fluid" alt="Site Musel Nacional">
                                         <div class="card-body">
                                             <h4 class="card-title"><b> Musel Nascional</b></h4>
@@ -205,7 +230,11 @@
                                         </div>
                                 </div>
                                 </div>
+
+                                <!--O carousel-item indica que esdte sera um conteudo apresentado no carousel-->
                                 <div class="carousel-item">
+
+                                    <!--Este comando cria cards na tela, dividido em tres partes-->
                                     <div class="cards-wrapper">
                                     <div class="card">
                                         <img src="_imagens/siteFinanças.PNG" class="card-img-top img-fluid" alt="Site Finanças">
@@ -233,6 +262,7 @@
                                     </div>
                                     </div>
                                 </div>
+                                
                                 <div class="carousel-item">
                                     <div class="cards-wrapper">
                                     <div class="card">
@@ -262,24 +292,38 @@
                                     </div>
                                 </div>
                             </div>
+                            <!--O comando carousel-control-prev, indica que este controle do voltara a foto anterior-->
                             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+
+                            <!--Aqui é criado o icone prev-->
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                             </a>
+
+                            <!--O comando carousel-control-next, indica que este controle avançara a foto-->
                             <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+
+                            <!--Aqui é criado o icone next-->
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                             </a>
                         </div>
 
+                        <!--Esta div so aparecera em dispositivos de telas pequenas-->
                         <div class="container d-md-none d-sm-block">
                             <div class="row justify-content-center">
                                 <div class="col-md-11">
 
+                                    <!--Este comando indica que os botões abedeceram ao id carouselExempleControls2-->
                                     <div id="carouselExampleControls2" class="carousel slide d-md-none d-sm-block" data-ride="carousel">
                                         
+                                        <!--o carousel-inner indica um novo carousel que foi criado-->
                                         <div class="carousel-inner" >
+
+                                            <!--Aqui indica um item do carousel e o active indica que sera o caroul ativado quando o site for carregado-->
                                             <div class="carousel-item active">
+
+                                                    <!--O codigo segue o mesmo intuito dos card ja visto, porem, agora, cada cards sera exibido de forma sozinha-->
                                                     <div class="card">
                                                         <img src="_imagens/siteFinanças.PNG" class="card-img-top img-fluid" alt="Site Finanças">
                                                         <div class="card-body">
@@ -380,6 +424,8 @@
                                             </div>
 
                                         </div>
+
+                                        <!--Controles do carousel-->
                                         <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="sr-only">Previous</span>
@@ -398,6 +444,8 @@
                     <hr>
                 </div>
 
+
+                <!--Aqui esta localizado o conteudo abaixo das apresentações-->
                 <div class="container">
 
                     <div class="container mt-5 text-center">
@@ -473,6 +521,7 @@
                             </div>
 
                             <div class="col-md-4 col-sm-11 text-center">
+                                <!--O codigo abaixo te redireciona para o whatsapp do desenvolvedos-->
                                 <a href="https://api.whatsapp.com/send?phone=+5511982192778"><H3 class="contatos"><b><i class="fa fa-whatsapp" aria-hidden="true"></i> : (11) 98219-2778</b></H3><br></a>
                             
                                 <H3 class="contatos"><b> Tel.: (11) 4354-0104</H3></b><br>
@@ -487,21 +536,25 @@
                                 <h3 class="contatos">Dúvidas Frequentes</3>
                                 <br>
                                 
+                                <!--Entrada de texto para duvidas-->
                                 <input type="text" name="" id="" placeholder="Dúvida:" class="formulario mb-3">
                             
-                                
+                                <!--Entrada de email a receber a resposta-->
                                 <input type="email" name="" id="" placeholder="E-mail de retorno:" class="formulario"><br>
                             
-
+                                <!--Botão para enviar-->
                                 <button type="submit" class="btn botaoVermais btn-inline-block">Enviar Duvida</button>
                                 <hr class="d-md-none d-sm-block">
                             </div>
 
                             <div class="col-md-4 col-sm-12 text-center ">
 
+                                <!--Esta opção de botão aparece um modal do window, pedindo parea fornecer os dados necessarios-->
                                 <span><h3 class="contatos ">Agende Seu Orçamento!</h3></span>
                                 <button type="button" class="btn botaoVermais " data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Enviar Email</button>
                                 
+
+                                    <!--Conteudo do modal a ser apresentado-->
                                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog" role="document">
                                             <div class="modal-content">
@@ -512,6 +565,7 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">
+                                                <!--Formulario dentro do modal-->
                                                 <form>
                                                 <div class="form-group">
                                                     <label for="recipient-name" class="col-form-label">DevCesar@gmail.com</label>
@@ -536,6 +590,7 @@
                     </div>
                 </footer>
 
+                <!--onteiner para avisar sobre os direitos autorais-->
                 <div class="container copyrighth">
                     <div class="row justify-content-center">
                         <div class="col-12 text-center">
