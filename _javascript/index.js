@@ -252,3 +252,20 @@ function objJson(Dados_Pessoais){
     console.log(Dados)
     return this.Dados
 }
+
+function typeWrite(elemento){
+
+    const titulo = document.getElementById('titulo');
+
+    const textoArray = elemento.innerHTML.split('');
+    elemento.innerHTML = ' ';
+    textoArray.forEach(function(letra, i){   
+    
+    setTimeout(function(){
+        elemento.innerHTML += letra;
+    }, 90 * i)
+
+    });
+    }
+
+    

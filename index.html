@@ -105,14 +105,30 @@
                     <div class="col-md-12  col-sm-12 text-start" >
                         <div class="jumbotron pl-4">
                             <div class="container">
-                                <span class="display-2 titulo "><b><span class="enfeite1"><</span>Cesar Reis <span class="enfeite2">/></span><br> FullStack Developer</b> </span>
+                                <span class="display-2 titulo"><b>
+
+                                    <span class="enfeite1"><</span>
+
+                                    <span id="titulo">
+                                        Cesar Reis
+                                    </span> 
+                                    
+                                    <span class="enfeite2">/></span><br>
+                                        FullStack Developer
+                                     </b>
+                                </span>
+
+                                <!--O script ativa a função somente a partir do titulo criado, 
+                                assim a função não ativa sem antes carregar o titulo-->
+                                <script>
+                                    typeWrite(titulo)
+                                </script>
                                 
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="container text-center margin-Setinha" >
-                
                     <i class="fa fa-angle-double-down icone "></i>
                 </div>
             </div>
